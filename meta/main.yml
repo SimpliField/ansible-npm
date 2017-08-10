@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Sébastien Elet
+  description: Npm packages setup
+  company: SimpliField
+  license: BSD
+  min_ansible_version: 2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+    - vivid
+    - wily
+    - xenial
+  galaxy_tags:
+  - npm
+  - packages
+dependencies: []
