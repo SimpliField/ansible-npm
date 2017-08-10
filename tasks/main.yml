@@ -1,0 +1,9 @@
+---
+- name: setup npm packages
+  npm:
+    name: "{{ item.package|default(item) }}"
+    global: true
+    state: "{{ item.state|default(omit) }}"
+    version: "{{ item.version|default(omit) }}"
+    registry: "{{ item.registry|default(omit) }}"
+  with_items: "{{ npm_packages }}"

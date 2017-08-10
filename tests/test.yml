@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+  - role: SimpliField.node
+  - role: role_under_test
+    npm_packages:
+    - yarn
